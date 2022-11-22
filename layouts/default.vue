@@ -14,7 +14,7 @@
       <v-spacer />
 
       <nuxt-link
-        class="text-decoration-none grey--text text--darken-3"
+        class="text-decoration-none grey--text text--darken-3 hidden-xs-only"
         active-class="grey--text text--darken-4 font-weight-bold"
         to="/"
       >About us</nuxt-link>
@@ -59,8 +59,8 @@ export default {
 }
 
 .app-bar {
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
 }
 </style>

@@ -16,17 +16,19 @@
       </v-btn>
     </template>
 
-    <v-card tile>
+    <v-card>
       <v-toolbar
         flat
-        dense
         class="grey--text text--darken-3"
       >
-        <v-toolbar-title>CONTACT US</v-toolbar-title>
+        <v-toolbar-title>Contact us</v-toolbar-title>
 
         <v-spacer />
 
-        <v-btn icon @click="dialog = !dialog">
+        <v-btn
+          icon
+          @click="dialog = !dialog"
+        >
           <v-icon>mdi-close</v-icon>
         </v-btn>
       </v-toolbar>
