@@ -1,52 +1,28 @@
 <template>
-  <v-dialog
-    v-model="dialog"
-    width="400"
+  <v-btn
+    depressed
+    outlined
+    tile
+    class="text-capitalize ml-4"
+    @click="toggleContactUsDialog"
+    :width="width"
   >
-    <template v-slot:activator="{ on, attrs }">
-      <v-btn
-        v-bind="attrs"
-        v-on="on"
-        depressed
-        outlined
-        tile
-        class="text-capitalize ml-4"
-      >
-        Contact us
-      </v-btn>
-    </template>
-
-    <v-card>
-      <v-toolbar
-        flat
-        class="grey--text text--darken-3"
-      >
-        <v-toolbar-title>Contact us</v-toolbar-title>
-
-        <v-spacer />
-
-        <v-btn
-          icon
-          @click="dialog = !dialog"
-        >
-          <v-icon>mdi-close</v-icon>
-        </v-btn>
-      </v-toolbar>
-
-      <ContactForm />
-    </v-card>
-  </v-dialog>
+    Contact us
+  </v-btn>
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
 import ContactForm from './ContactForm.vue';
 export default {
+  props: {
+    width: String
+  },
+
   components: { ContactForm },
-  data: () => ({
-    dialog: false,
-  })
+
+  methods: {
+    ...mapMutations(['toggleContactUsDialog'])
+  }
 }
 </script>
-
-<style>
-</style>
