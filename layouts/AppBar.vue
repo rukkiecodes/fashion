@@ -11,7 +11,7 @@
       class="hidden-sm-and-up"
     ></v-app-bar-nav-icon>
 
-    <v-app-bar-title class="logo mr-5">Walainjo merch</v-app-bar-title>
+    <v-app-bar-title class="logo mr-5 font-weight-bold"><span class="amber--text text--darken-4">Walainjo</span> merch</v-app-bar-title>
 
     <v-spacer />
 
@@ -43,10 +43,8 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
 .logo {
-  font-family: 'Pacifico', cursive !important;
+  font-family: 'Times New Roman', Times, serif !important;
 }
 
 .app-bar {
