@@ -1,32 +1,22 @@
 <template>
   <v-navigation-drawer
-app
+    app
     temporary
     v-model="_drawer"
   >
     <v-list dense>
       <v-list-item
+        v-for="(route, i) in routes"
+        :key="i"
         link
-        to="/"
+        :to="route.to"
       >
         <v-list-item-icon>
-          <v-icon>mdi-home</v-icon>
+          <v-icon>{{ route.icon }}</v-icon>
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title>Home</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-      <v-list-item
-        link
-        to="/about"
-      >
-        <v-list-item-icon>
-          <v-icon>mdi-comment-question</v-icon>
-        </v-list-item-icon>
-
-        <v-list-item-content>
-          <v-list-item-title>About us</v-list-item-title>
+          <v-list-item-title>{{ route.title }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>
@@ -41,6 +31,26 @@ import ContactUsButton from '../components/fragments/ContactUsButton.vue'
 import { mapState } from 'vuex';
 
 export default {
+  data: () => ({
+    routes: [
+      {
+        to: '/',
+        title: 'Home',
+        icon: 'mdi-home'
+      },
+      {
+        to: '/about',
+        title: 'About us',
+        icon: 'mdi-comment-question'
+      },
+      {
+        to: '/services',
+        title: 'Our services',
+        icon: 'mdi-room-service'
+      },
+    ]
+  }),
+
   components: { ContactUsButton },
 
   computed: {
