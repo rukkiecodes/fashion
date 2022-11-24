@@ -1,6 +1,6 @@
 <template>
   <v-navigation-drawer
-    app
+app
     temporary
     v-model="_drawer"
   >
