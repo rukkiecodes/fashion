@@ -1,9 +1,8 @@
 <template>
   <v-navigation-drawer
-    v-model="_drawer"
 app
-    absolute
     temporary
+    v-model="_drawer"
   >
     <v-list dense>
       <v-list-item
