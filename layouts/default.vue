@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
-    <AppBar />
     <Drawer />
+    <AppBar />
     <v-main>
       <v-container>
         <transition

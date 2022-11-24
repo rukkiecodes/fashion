@@ -49,5 +49,8 @@ export default {
 <style scoped>
 .times {
   font-family: 'Times New Roman', Times, serif !important;
+  background: -webkit-linear-gradient(45deg, #ff4f98, #727aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
