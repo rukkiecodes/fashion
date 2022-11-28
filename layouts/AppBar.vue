@@ -29,7 +29,7 @@
       class="text-decoration-none grey--text text--darken-3 hidden-xs-only mr-4"
       active-class="grey--text text--darken-4 font-weight-bold"
       to="/services"
-    >Our services</nuxt-link>
+    >Services</nuxt-link>
 
     <ContactUsButton />
   </v-app-bar>

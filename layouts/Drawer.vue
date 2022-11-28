@@ -45,7 +45,7 @@ export default {
       },
       {
         to: '/services',
-        title: 'Our services',
+        title: 'Services',
         icon: 'mdi-room-service'
       },
     ]
