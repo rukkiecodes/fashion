@@ -11,7 +11,7 @@
       class="hidden-sm-and-up"
     ></v-app-bar-nav-icon>
 
-    <v-app-bar-title class="logo mr-5 font-weight-bold"><span class="amber--text text--darken-4">Walainjo</span> merch</v-app-bar-title>
+    <v-app-bar-title class="logo mr-5 font-weight-bold"><span class="colorText">Walainjo</span> merch</v-app-bar-title>
 
     <v-spacer />
 
@@ -56,5 +56,11 @@ export default {
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(20px);
   border-radius: 10px;
+}
+
+.colorText {
+  background: -webkit-linear-gradient(45deg, #FF4F98, #727AFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
