@@ -10,6 +10,7 @@
         :key="i"
         link
         :to="route.to"
+        active-class="orange--text text--accent-3"
       >
         <v-list-item-icon>
           <v-icon>{{ route.icon }}</v-icon>
@@ -36,17 +37,17 @@ export default {
       {
         to: '/',
         title: 'Home',
-        icon: 'mdi-home'
+        icon: 'mdi-home-outline'
       },
       {
         to: '/about',
         title: 'About us',
-        icon: 'mdi-comment-question'
+        icon: 'mdi-comment-question-outline'
       },
       {
         to: '/services',
         title: 'Services',
-        icon: 'mdi-room-service'
+        icon: 'mdi-room-service-outline'
       },
     ]
   }),

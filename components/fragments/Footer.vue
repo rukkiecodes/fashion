@@ -18,8 +18,8 @@
             flat
             color="transparent"
           >
-            <v-card-title>WALINJO MERCH</v-card-title>
-            <v-card-text>Walainjo merch for IOS and Androind</v-card-text>
+            <v-card-title class="text-uppercase">Duezina Signatures</v-card-title>
+            <v-card-text>Duezina Signatures for IOS and Androind</v-card-text>
           </v-card>
         </v-col>
         <v-col

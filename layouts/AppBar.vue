@@ -11,7 +11,9 @@
       class="hidden-sm-and-up"
     ></v-app-bar-nav-icon>
 
-    <v-app-bar-title class="logo mr-5 font-weight-bold"><span class="colorText">Walainjo</span> merch</v-app-bar-title>
+    <v-avatar tile size="100">
+      <img src="../assets/logo.png">
+    </v-avatar>
 
     <v-spacer />
 
@@ -59,7 +61,7 @@ export default {
 }
 
 .colorText {
-  background: -webkit-linear-gradient(45deg, #FF4F98, #727AFF);
+  background: -webkit-linear-gradient(45deg, #ff4f98, #727aff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

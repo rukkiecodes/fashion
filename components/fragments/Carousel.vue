@@ -23,9 +23,9 @@ export default {
 
   data: () => ({
     slides: [
-      'https://res.cloudinary.com/rukkiecodes/image/upload/v1669240412/shedrack-salami-Ba1eGcAFj5w-unsplash_ue0e6s.jpg',
-      'https://res.cloudinary.com/rukkiecodes/image/upload/v1669240412/prince-akachi-s6tVlDVKz38-unsplash_spcliy.jpg',
-      'https://res.cloudinary.com/rukkiecodes/image/upload/v1669240411/shedrack-salami-gPT2JJdMnag-unsplash_fsfbsi.jpg'
+      'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749229/fashion/WhatsApp_Image_2022-11-29_at_4.46.07_PM_nyho5z.jpg',
+      'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749226/fashion/WhatsApp_Image_2022-11-29_at_4.46.04_PM_o4steu.jpg',
+      'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749227/fashion/WhatsApp_Image_2022-11-29_at_4.46.04_PM_1_kxewtg.jpg'
     ],
   }),
 }

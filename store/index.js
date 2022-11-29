@@ -2,111 +2,39 @@ export const state = () => ({
   contactUsDialog: false,
   drawer: false,
   shopDialog: false,
-  activeShop: {},
+  activeShop: '',
   quantity: 1,
   shops: [
-    {
-      img: [
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/J/N/198971_1647941458.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/Y/Z/198971_1647941485.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/R/E/198971_1647941514.jpg',
-      ],
-      title: "Men's Traditional Wear - Sky Blue",
-      soldBy: "Kenability",
-      soldByLink: 'https://www.konga.com/merchant/kenability',
-      color: 'Blue',
-      sizes: ['S', 'M', 'L', 'XXL'],
-      price: '₦13,000'
-    },
-    {
-      img: [
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/M/e/Men-s-Traditional-Dansiki-Wear---Black-6637938.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/M/e/Men-s-Traditional-Dansiki-Wear---Black-6637939.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/M/e/Men-s-Traditional-Dansiki-Wear---Black-6637940.jpg',
-      ],
-      title: "Men's Traditional Dansiki Wear - Black",
-      soldBy: "KIMBERLY STORES",
-      soldByLink: 'https://www.konga.com/merchant/kimberly-stores',
-      color: 'Black',
-      sizes: ['XL', 'XXL', 'S/M'],
-      price: '₦19,000'
-    },
-    {
-      img: [
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/R/N/51448_1628846588.jpg'
-      ],
-      title: "Agbada For Men",
-      soldBy: "House Of Greg",
-      soldByLink: 'https://www.konga.com/merchant/house-of-greg',
-      color: 'Multicolour',
-      sizes: ['M', 'XL'],
-      price: '₦40,000'
-    },
-    {
-      img: [
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/W/V/140925_1666255942.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/W/V/140925_1666255942.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/W/V/140925_1666255942.jpg'
-      ],
-      title: "Men's Senator Plain Wear - Royal Blue",
-      soldBy: "T-Gold Stitches",
-      soldByLink: 'https://www.konga.com/merchant/t-gold-stitches',
-      color: 'Not Applicable',
-      sizes: ['M'],
-      price: '₦15,000'
-    },
-    {
-      img: [
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/L/L/93408_1535483420.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/L/R/93408_1535483459.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/G/M/93408_1535483489.jpg'
-      ],
-      title: "Adot Men's Traditional Native Wear - White",
-      price: '₦14,999',
-      color: 'White',
-      sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-      soldBy: "MAESTRO MAKEOVER",
-      soldByLink: 'https://www.konga.com/merchant/maestro-makeover',
-    },
-    {
-      img: [
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/P/G/53294_1648835600.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/O/L/53294_1648839065.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/H/R/53294_1648839092.jpg'
-      ],
-      title: "Blue Native African Wear With Colorful/lace Up Detail",
-      price: '₦12,000',
-      color: 'Blue',
-      sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-      soldBy: "SynGeTters",
-      soldByLink: 'https://www.konga.com/merchant/syngetters',
-    },
-    {
-      img: [
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/V/L/194125_1646955398.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/G/O/194125_1646955391.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/W/Q/194125_1646955404.jpg'
-      ],
-      title: "Men's Striped Outfit - Blue",
-      price: '₦25,000',
-      color: 'Blue',
-      sizes: ['Free Size'],
-      soldBy: "King Kaftan",
-      soldByLink: 'https://www.konga.com/merchant/king-kaftan',
-    },
-    {
-      img: [
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/Z/X/198971_1647938138.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/M/U/198971_1647938177.jpg',
-        'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/V/G/198971_1647938214.jpg'
-      ],
-      title: "Mens Grey Traditional Senator Attire",
-      price: '₦13,000',
-      color: 'Grey',
-      sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-      soldBy: "Kenability",
-      soldByLink: 'https://www.konga.com/merchant/kenability',
-    },
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749229/fashion/WhatsApp_Image_2022-11-29_at_4.46.05_PM_2_cvczhc.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749228/fashion/WhatsApp_Image_2022-11-29_at_4.46.06_PM_1_x9xrkv.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749229/fashion/WhatsApp_Image_2022-11-29_at_4.46.07_PM_nyho5z.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749226/fashion/WhatsApp_Image_2022-11-29_at_4.46.04_PM_o4steu.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749226/fashion/WhatsApp_Image_2022-11-29_at_4.46.06_PM_qvi57p.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749227/fashion/WhatsApp_Image_2022-11-29_at_4.46.04_PM_1_kxewtg.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749224/fashion/WhatsApp_Image_2022-11-29_at_4.46.02_PM_1_i37fnk.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749224/fashion/WhatsApp_Image_2022-11-29_at_4.46.05_PM_jbzmbs.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749224/fashion/WhatsApp_Image_2022-11-29_at_4.46.03_PM_l9kugs.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749226/fashion/WhatsApp_Image_2022-11-29_at_4.46.05_PM_1_i4xxiq.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749224/fashion/WhatsApp_Image_2022-11-29_at_4.46.02_PM_2_ua0i6y.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749224/fashion/WhatsApp_Image_2022-11-29_at_4.46.03_PM_1_u5huig.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749223/fashion/WhatsApp_Image_2022-11-29_at_4.46.02_PM_fja33b.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749221/fashion/WhatsApp_Image_2022-11-29_at_4.46.01_PM_1_p68x3l.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749222/fashion/WhatsApp_Image_2022-11-29_at_4.46.00_PM_2_iiabab.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749221/fashion/WhatsApp_Image_2022-11-29_at_4.45.58_PM_2_rinfcx.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749222/fashion/WhatsApp_Image_2022-11-29_at_4.46.01_PM_3_mhnvum.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749220/fashion/WhatsApp_Image_2022-11-29_at_4.46.01_PM_2_n8hmjc.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749219/fashion/WhatsApp_Image_2022-11-29_at_4.45.58_PM_1_heccnb.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749220/fashion/WhatsApp_Image_2022-11-29_at_4.46.01_PM_xv4jhb.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749219/fashion/WhatsApp_Image_2022-11-29_at_4.45.59_PM_1_p0mgh2.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749218/fashion/WhatsApp_Image_2022-11-29_at_4.45.59_PM_u9uzym.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749219/fashion/WhatsApp_Image_2022-11-29_at_4.46.00_PM_1_swlqqh.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749216/fashion/WhatsApp_Image_2022-11-29_at_4.45.58_PM_tedvw8.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749218/fashion/WhatsApp_Image_2022-11-29_at_4.46.00_PM_nuvo4a.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749216/fashion/WhatsApp_Image_2022-11-29_at_4.45.56_PM_1_xvpzuk.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749215/fashion/WhatsApp_Image_2022-11-29_at_4.45.57_PM_wm41ri.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749215/fashion/WhatsApp_Image_2022-11-29_at_4.45.57_PM_1_rtmyu2.jpg',
+    'https://res.cloudinary.com/rukkiecodes/image/upload/v1669749215/fashion/WhatsApp_Image_2022-11-29_at_4.45.56_PM_2_fdbrll.jpg'
+
   ],
 
   drawerNavigation: [

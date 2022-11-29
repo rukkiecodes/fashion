@@ -4,7 +4,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '',
-    title: 'Wanlainjo merch',
+    title: 'Duezina Signatures',
     htmlAttrs: {
       lang: 'en',
     },

@@ -6,13 +6,16 @@
     <v-col
       cols="12"
       sm="6"
+      order="1"
+      order-md="0"
+      order-lg="0"
     >
       <v-card flat>
         <v-card-title class="times text-h3 text-lg-h1 font-weight-bold">Our Services</v-card-title>
         <v-divider inset />
         <v-card-subtitle class="text-h6 font-weight-regular pb-0">WHAT WE OFFER</v-card-subtitle>
         <v-card-text class="text-body-2 grey--text text--darken-3 my-6 font-weight-regular pt-0">
-          Walainjo merch Luxury Limited is a homegrown, Nigerian online platform created with the city dweller in mind—expediently connecting them with premium quality products and services. Our customers and their satisfaction is a beacon lighting the path forward in the decisions we make, most especially with the partners to whom we engage.
+          Duezina Signatures is a homegrown, Nigerian online platform created with the city dweller in mind—expediently connecting them with premium quality products and services. Our customers and their satisfaction is a beacon lighting the path forward in the decisions we make, most especially with the partners to whom we engage.
         </v-card-text>
       </v-card>
     </v-col>
