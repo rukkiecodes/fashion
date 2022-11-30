@@ -12,7 +12,7 @@
         sm="6"
       >
         <v-card flat>
-          <v-card-title class="times text-h3 text-lg-h1 font-weight-bold">Men`s<br />Fashion</v-card-title>
+          <v-card-title class="times text-h3 text-lg-h1 font-weight-bold">Duezina<br />Signatures</v-card-title>
           <v-divider inset />
           <v-card-text class="text-body-1 grey--text text--darken-3 my-6 font-weight-bold">
             Make a power statement. Let your style do the talking. Get your selection of traditional men`s outfits deliverd right to your doorstep!
